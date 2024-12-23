@@ -12,7 +12,7 @@ public class CountdownByIRunnable implements Runnable {
         for (int i = start; i >= 0; i--) {
             System.out.println(Thread.currentThread().getName() + ": " + i);
             try {
-                Thread.sleep(1000);  // Tạm dừng 1 giây
+                Thread.sleep(1000);
             } catch (InterruptedException e) {
                 System.out.println("Countdown interrupted!");
                 break;
